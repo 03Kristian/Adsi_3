@@ -1,5 +1,4 @@
 <?php
-
     class Vehiculo {
 //Atributos
         public $placa;
@@ -8,7 +7,7 @@
         public $kilometraje;
         public $velocidad;
         public $tiempo;
-        public $distancia;
+        //public $distancia;
         //public $fecha_registro = date("j, n, Y");
         #public $fecha = date("Y-m-d");
 
@@ -25,6 +24,7 @@
         }
 
 //Metodos
+//metodos getters y setters
         public function getvehiculo(){
             $arrayvehiculo = Array(
             'Placa: ' => $this->placa,
@@ -37,9 +37,15 @@
             $distancia = $this->velocidad * $this->tiempo;
             return $distancia;
         }
-        //public function getfecha_registro(){
-          //  return $this->fecha_registro;
+        //getter mostrar la informacion del atributo marca
+        public function getmarca(){
+            return $this->marca;
             
-        //}
+        }
+        //setter asignar la informacion al atributo marca
+        public function setmarca($marca){
+            $this->strmarca = $marca;
+        }
+
     }
 ?>

@@ -9,9 +9,12 @@
     print_r('<pre>');
 
     echo"<br>";
-    echo $objvehiculo->marca;
-
-    //$objvehiculo->getdistancia();
+    echo $objvehiculo->getmarca();
+    echo"<br>";
+    echo $objvehiculo->setmarca("FORD");
+    echo $objvehiculo->getmarca();
+    echo"<br>";
+    echo $objvehiculo->modelo;
     echo '<br>';
     echo "La distancia recorrida del vehiculo es: ".$objvehiculo->distancia();
     //print_r();
