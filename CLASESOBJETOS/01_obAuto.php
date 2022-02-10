@@ -18,5 +18,11 @@
     echo '<br>';
     echo "La distancia recorrida del vehiculo es: ".$objvehiculo->distancia();
     //print_r();
-
+    echo '<br>';
+    
+    echo $objvehiculo->getplaca();
+    echo '<br>';
+    $objvehiculo->setplaca("GTY-900");
+    echo $objvehiculo->getplaca();
+    //echo ' La placa actualizada es: '.$objvehiculo->setmarca("GTY-900");
 ?>

@@ -1,7 +1,7 @@
 <?php
     class Vehiculo {
 //Atributos
-        public $placa;
+        protected $placa;
         public $marca;
         public $modelo;
         public $kilometraje;
@@ -46,6 +46,12 @@
         public function setmarca($marca){
             $this->strmarca = $marca;
         }
-
+        
+        public function getplaca(){
+            return $this->placa;
+        }
+        public function setplaca($vrplaca){
+            $this->placa = $vrplaca;
+        }
     }
 ?>
