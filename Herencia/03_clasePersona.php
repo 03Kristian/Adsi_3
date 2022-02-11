@@ -1,7 +1,7 @@
 <?php
     class Persona {
         protected $cedula;
-        protected $nombre;
+        public $nombre;
         private $edad;
         
         //static $estado = 'Activo';

@@ -1,5 +1,5 @@
 <?php
-    require_once("04_claseCliente.php");
+    require_once("03_clasePersona.php");
 
     class Cliente extends Persona {
 
@@ -7,13 +7,17 @@
 
         public function __construct($vrcedula, $vrnombre, $vredad, $vrcredito)
         {   //parent permite llevar los datos al constructor de Persona
-            parent::__construct($vrcedula, $vrnombre, $vredad);
+            parent::__construct($vrcedula, $vrnombre, $vredad, $vrcredito);
             $this->credito = $vrcredito;
         }
 
         public function getCredito()
         {
             return $this->credito;
+        }
+        public function setCredito($vrcredito)
+        {
+            $this->credito = $vrcredito;
         }
     }
 
