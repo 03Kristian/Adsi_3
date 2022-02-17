@@ -1,5 +1,5 @@
 <?php
-    require_once("06_claseCliente.php");
+    require_once("01_claseCliente.php");
     //
     class Usuario extends Cliente{
 
@@ -13,11 +13,11 @@
             $this->password = $vrpassword;
         }
 
-        public function getemail()
+        public function getEmail()
         {
             return $this->email;
         }
-        public function setemail($vremail)
+        public function setEmail($vremail)
         {
             $this->email = $vremail;
         }
